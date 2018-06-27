@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: darkgray;
+    
+}
+
+input:hover, input:focus {
+    
+    background-color: lavender;
+    color: black;
+    font-weight: bold;
+}
+
+.submit input {
+	 margin-left: 20px; 
+    background-color: darkgray;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: black;
+}
+
+form label {
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#header{
+    height: 40px;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: 5px;
+    margin-bottom: 55px;
+    margin-right: 50px;
+    margin-left: 0px;
+    background-color: gray;
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+#conteudo{
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+  
+}
+
+ 
+#footer{
+   height: 70px;
+   margin-top: -15px;
+   width: 100%;
+   background-color: gray;
+   border-radius: 0px 0px 10px 10px;
+   clear: both;
+   
+  }

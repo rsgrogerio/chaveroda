@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lemar Sistemas de Gestão Comercial</title>
+    <link rel="stylesheet" href="../css/principal.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+  	<div id="header">
+
+
+<div id="NavbarMenu">
+  <div id="NavbarMenuleft">
+    <ul id="nav">
+
+      <li><a href="">Cadastro &#9662;</a>
+        <ul class="scroll">
+          <li><a href="cadastro_cliente.php">Clientes</a></li>
+          <li><a href="cadastro_funcionario.php">Funcionarios</a></li>
+          <li><a href="cadastro_servico.php">Servicos</a></li>
+          <li><a href="cadastro_produto.php">Produtos</a></li>
+          <li><a href="cadastro_politicadesconto.php">Politica Descontos</a></li>
+          <li><a href="cadastro_carro.php">Carro</a></li>
+          <li><a href="cadastro_formapagamento.php">Forma de Pagamento</a></li>
+        </ul>
+      </li>   
+
+        <li><a href="">OS &#9662;</a>
+        </li>
+
+          <li><a href="">Vendas &#9662;</a>
+          </li>
+
+    </ul>
+  </div>
+</div>
+  		
+</div>
+  	
+  	<div id="conteudo">
+  		<form>
+
+        <h1>Lemar Sistema de Gestão Comercial</h1>
+
+    	</form>  
+  	</div>
+    
+  </body>
+</html>

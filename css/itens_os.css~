@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: darkgray;   /*cor do texto Cadastro de ....*/
+    
+}
+
+
+.submit input {
+	 margin-left: 20px;  /*posição esqueda ou direita do botão Cadastrar*/ 
+    background-color: darkgray; /*cod do botao cadastrar*/
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: black;
+}
+
+form label {
+    margin-left: 20px;
+    color: black;     /*cor da fonte dos labels da formulario*/
+    font-weight: bold;
+}
+
+#header{
+    font-family: Verdana,Tahoma,sans-serif;
+    background-color: lightgrey; /*cor do banner superior*/
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 0px;  /*move o inicio do banner para esqueda ou direita*/
+    margin-top: -20px;
+
+}
+ 
+#home{
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 0px;
+    margin-top: -15px;  /*aumenta ou diminui o tamanho do banner na vertical da parte superior*/
+    background-color: green; /*cor do banner na parte superior*/
+    border-radius: 0px 0px 80px 250px;
+    margin-right: 1305px;
+}
+
+
+div#coluna_esquerda {	
+margin-top: 20px;
+float: inherit;	
+width: auto;	
+height: auto;	
+background-color: lightgrey; 
+}
+
+ 
+div#banner {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 22px;
+	 margin-top: -79px;
+    margin-left: 30px;  /*move o inicio do banner para esqueda ou direita*/
+    float: right;
+    background-color: lightgrey; /*cor do banner superior*/
+    width: 1000px;
+    height: 79px;
+    border-radius: 0px 0px 15px 0px;
+}  
+
+div#voltar {
+    font-family: Verdana,Tahoma,sans-serif;
+    background-color: white; /*cor do banner superior*/
+    width: 62px;
+    height: 55px;
+    border-radius: 0px 0px 15px 0px;
+    margin-left: 0px;  /*move o inicio do banner para esqueda ou direita*/
+
+}  
+
+#tabeladados{
+   margin-top: -40px;
+   width: 100%;
+   background-color: whitesmoke;
+   border-radius: 0px 0px 10px 10px;
+   height: 90px;
+   clear: both;
+   margin-left: 20px
+   
+   max-width: 100%;
+   height: auto;
+   overflow: scroll;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lemar Sistemas de Gestão</title>
+    <link rel="stylesheet" href="../css/cadCliente.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+  <div id="cad_cliente">
+  <div id="header">
+  		
+  </div>
+  <div id="conteudo">
+  		<form name="cad_cliente" method="POST" action="../controller/gravar.php">
+
+        <h1>Cadastro de Clientes</h1>
+
+		  <p class="cpfcnpj">
+				<label for="cpfcnpj">CPF/CNPJ: </label>            
+            <input type="text" id="cpfcnpjid" required="required" name="cpfcnpj" size="56" required autofocus>
+            
+        </p>        
+        
+        <p class="nome">
+				<label for="nome">Nome: </label>            
+            <input type="text" id="nomeid" required="required" name="nome" size="60">
+            
+        </p>
+        
+        <p class="endereco">
+				<label for="endereco">Endereço: </label>            
+            <input type="text" id="enderecoid" required="required" name="endereco" size="56">
+            
+        </p>
+        
+        <p class="bairro">
+				<label for="bairro">Bairro: </label>            
+            <input type="text" id="bairroid" placeholder="Informe o Bairro" required="required" name="bairro" size="43">
+            
+				
+         <label for="sexo">Sexo: </label>
+				<select id="sexoid" name="sexo">
+					<option> </option>					
+					<option>M</option>
+					<option>F</option>
+				</select>
+        </p>
+        
+        <p class="cidade">
+				<label for="cidade">Cidade: </label>            
+            <input type="text" id="cidadeid" required="required" name="cidade" size="43">
+            
+            
+            <label for="uf">UF: </label>            
+            <select id="ufid" name="uf">
+					<option> </option>					
+					<option>AC</option>
+					<option>AL</option>
+					<option>AP</option>
+					<option>AM</option>
+					<option>BA</option>
+					<option>CE</option>
+					<option>DF</option>
+					<option>ES</option>
+					<option>GO</option>
+					<option>MA</option>
+					<option>MT</option>
+					<option>MS</option>
+					<option>MG</option>
+					<option>PA</option>
+					<option>PB</option>
+					<option>PR</option>
+					<option>PE</option>
+					<option>PI</option>
+					<option>RR</option>
+					<option>RO</option>
+					<option>RJ</option>
+					<option>RN</option>
+					<option>RS</option>
+					<option>SC</option>
+					<option>SP</option>
+					<option>SE</option>
+					<option>TO</option>
+				</select>
+
+            
+        </p>
+			        
+        <p class="telefone">
+				<label for="telefone">Telefone: </label>            
+            <input type="text" id="telefoneid" placeholder="(xx)xxxx-xxxx" name="telefone" size="20">
+            
+				<label for="celular">Celular: </label>            
+            <input type="text" id="celularid" placeholder="(xx)xxxxx-xxxx" required="required" name="celular" size="21">
+            
+        </p>
+                
+        <p>
+				<label for="email">Email: </label>            
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" size="61">    
+        </p>
+        
+			<div id="conteudo-right">
+<!--  				<input type="image" width="150" height="00" src="../imagens/rogerio.png"> !-->
+   	   </div>        
+                
+        <p>
+				<label for="foto">Foto: </label>            
+            <input type="file" id="fotoid" name="foto">
+            
+        </p>
+
+        <p class="submit">
+            <input type="submit" value="Cadastrar" name="cadastrar" id="cadastrarid">
+        </p>
+		
+    
+    </form>
+    
+    <br>
+	 <br>
+	 
+  
+  </div>
+
+  
+				
+  </div>
+
+
+<div id="tabeladados">
+
+<?php
+   
+$conn= new mysqli("localhost","root","","chaveroda");
+
+if($conn->connect_error){
+	echo "Error: ".$conn->connect_error;
+}
+
+$result = $conn->query("SELECT * FROM `cliente`");
+$data = array();
+
+/* while ($row = $result->fetch_assoc()){
+       
+       echo '<br /><pre>';
+       print_r($row);
+       echo '</pre>';
+} */
+
+ 
+      echo '<table width="900" height="50" border="1" cellspacing="0">';
+	 	echo '<tr>';
+		echo 	'<td bgcolor="lightgray" align="center"><strong>CPF/CNPJ ................</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Nome ........................................<strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Endereco ..........................................</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Bairro .....................</strong></td>';
+		echo	'<td bgcolor="lightgray" align="center"><strong>Cidade ................</strong></td>';	   	
+		echo	'<td bgcolor="lightgray" align="center"><strong>UF ....</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Telefone ................</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Sexo ......</strong></td>';
+		echo	'<td bgcolor="lightgray" align="center"><strong>Email ................................................</strong></td>';
+	 	echo '</tr>';
+
+
+while ($row = $result->fetch_assoc()){
+            
+		echo '<tr>';
+		echo '  <td>'.$row["cpfcnpj"].'</td>';
+		echo '  <td>'.$row["nome"].'</td>';
+		echo '  <td>'.$row["endereco"].'</td>';
+		echo '  <td>'.$row["bairro"].'</td>';
+		echo '  <td>'.$row["cidade"].'</td>';
+		echo '  <td>'.$row["uf"].'</td>';
+		echo '  <td>'.$row["telefone"].'</td>';
+		echo '  <td>'.$row["sexo"].'</td>';
+		echo '  <td>'.$row["email"].'</td>';
+		echo '</tr>';
+	
+}	
+	   echo '</table>';
+
+?>
+
+
+</div>
+    
+</body>
+</html>

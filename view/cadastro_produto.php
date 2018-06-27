@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lemar Sistemas de Gestão</title>
+    <link rel="stylesheet" href="../css/cadastro.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+  <div id="cad_cliente">
+  <div id="header">
+  <br>
+  <div id="home">
+		<a href="../index.html">
+	 		<img src="../imagens/home.jpeg" width="50" height="50">		
+  		</a>
+  </div>
+  
+  </div>
+  <div id="conteudo">
+  		<form name="cad_cliente" method="POST" action="../controller/gravar_produto.php">
+
+        <h1>Cadastro de Produtos</h1>
+
+		  <p class="codigo">
+				<label for="codigo">Código: </label>            
+            <input type="text" id="codigoid" placeholder="Informe o Código" name="codigo" size="30" required autofocus>
+            
+            <label for="ativo">Ativo: </label>            
+            	<select id="ativoid" name="ativo">
+						<option>Ativo</option>
+						<option>Inativo</option>
+					</select>	
+            
+        </p>        
+        <p class="descricao">
+				<label for="descricao">Descricao: </label>            
+            <input type="text" id="descricaoid" placeholder="Informe o Nome do produto" name="descricao" size="70">
+            
+        </p>
+        
+        <p>
+        	<label for="precovenda">Preço: </label>            
+            <input type="text" id="precovendaid" placeholder="R$" name="precovenda" size="20">
+
+				<label for="saldo">Saldo: </label>            
+            <input type="text" id="saldoid" placeholder="Saldo do Produto" name="saldo" size="20">
+        </p>
+        
+        <p class="submit">
+            <input type="submit" value="Cadastrar" name="cadastrar" id="cadastrarid">
+        </p>
+		    
+     </form>
+    
+    <br>
+	 <br>
+	 
+  </div>
+
+  </div>
+
+
+<div id="tabeladados">
+
+<?php
+   
+$conn= new mysqli("localhost","root","","chaveroda");
+
+if($conn->connect_error){
+	echo "Error: ".$conn->connect_error;
+}
+
+$result = $conn->query("SELECT * FROM `produto` WHERE ativo = 'Ativo' order by id");
+$data = array();
+
+ 
+      echo '<table width="100%" height="50" border="1" cellspacing="0">';
+	 	echo '<tr>';
+		echo 	'<td bgcolor="lightgray" align="center"><strong>Código </strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Descrição <strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Preço </strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Saldo </strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Ativo </strong></td>';
+		echo '</tr>';
+
+
+while ($row = $result->fetch_assoc()){
+            
+		echo '<tr>';
+		echo '  <td>'.$row["codigo"].'</td>';
+		echo '  <td>'.$row["descricao"].'</td>';
+		echo '  <td>'.$row["precovenda"].'</td>';
+		echo '  <td>'.$row["saldo"].'</td>';
+		echo '  <td>'.$row["ativo"].'</td>';
+		echo '</tr>';
+	
+}	
+	   echo '</table>';
+
+?>
+
+
+</div>
+    
+</body>
+</html>

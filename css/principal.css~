@@ -1,0 +1,192 @@
+body {
+    padding: 0; /* não faz nenhum efeito*/
+    margin: 0;  /*anda com a margem para esqueda*/
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;  /*posição do texto Lemar Sistema de Gestão Comercial*/
+    color: darkgray;  /*cor do texto Lemar Sistema de Gestão Comercial*/
+    
+}
+
+#header{
+    height: 55px;   /* tamanho da faixa cinza escuro dos menus*/
+    width: 100%;   /* não faz nenhum efeito*/ 
+    margin-top: -75px; /* anda com a faixa cinza escuto para cima ou para baixo*/
+    margin-left: 0px;  /* move a faixa cinza escuro para direita ou esquerda*/
+    background-color: gray; /* cor da faixa cinza escuro de traz*/
+    border-radius: 0px 0px 10px 10px; /* pontos arredondados na faixa cinza escuro da frente*/
+    position: fixed;  /* posição da faixa cinza escuto na tela*/
+    z-index: 1; /* não faz nenhum efeito*/
+}
+
+#conteudo{
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 22px;   /* tamanho da fonte Lemar Sistema de Gestão Comercial*/    
+    margin-top: 75px; /* aumenta ou diminui a posição vertical dos objetos*/
+    background-color: lightgray;  /* cor de fundo Lemar Sistema de Gestão Comercial*/
+    width: 100%;   /* não faz nenhum efeito*/
+    border-radius: 0px 0px 10px 10px; /* pontos arredondados na faixa Lemar Sistema de Gestão Comercial*/
+    height: 85px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#NavbarMenu {
+background: gray;/*--COR DE FUNDO DO MENU--*/
+width: 1022px;/*--TAMANHO DO MENU--*/
+float: left;
+height: 35px;/*--ALTURA DAS CASAS--*/
+font-size: 13px;/*--TAMANHO DA FONTE--*/
+font-family: arial;/*--TIPO DA FONTE--*/
+color: #fff;/*--cor do link--*//*--COR DA FONTE--*/
+font-weight: none;
+margin: 0;
+padding: 10;
+text-transform: none;
+}
+#NavbarMenuleft {
+width: 100%;
+float: left;
+margin: 0;
+padding: 0;
+}
+#nav {
+margin: 0;
+padding: 0;
+}
+#nav ul {
+float: left;
+list-style: yes;
+margin: 0;
+padding: 0;
+}
+#nav li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#nav li a, #nav li a:link, #nav li a:visited {
+color: white; /*--edite cor do link--*/
+display: block;
+font-size: 25px;/*--tamanho da fonte do link--*/
+font-family: Verdana,Tahoma,sans-serif;
+font-weight: bold;
+text-transform: none;
+margin: 0;
+padding: 9px 15px 8px;
+border-right: 1px solid #FFFFFF;/*--COR E TIPO DE BORDA--*/
+
+}
+#nav li a:hover, #nav li a:active {
+background: #ffffff;/*--COR DE FUNDO EM ESTADO HOVER--*/
+color: #FFF; /*--COR DA FONTE EM ESTADO HOVER--*/
+margin: 0;
+padding: 9px 15px 8px;
+text-decoration: yes;  
+color: #000000;
+}
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+background: lightgrey;/*--COR DE FUNDO DO SUB MENU--*/
+width: auto;
+color: darkgray; /*--cor do link--*/
+font-size: 15px;/*--TAMANHO DA FONTE DO SUB MENU--*/
+font-family: Verdana,Tahoma,sans-serif;	/*--FONTE DO SUB MENU--*/
+font-weight: normal;
+text-transform: none;
+float: none;
+margin: 0;
+padding: 7px 10px;
+border-bottom: 1px solid gray;
+border-left: 3px solid gray;
+border-right: 3px solid gray;
+font-weight: bold;
+
+}
+#nav li li a:hover, #nav li li a:active {
+background: #ffffff;/*--COR DE FUNDO DO SUB MENU EM ESTADO HOVER--*/
+color: #FFF; /*--COR DA FONTE DO SUB MENU EM ESTADO HOVER--*/
+text-transform: yes;  
+color: #000000; 
+font-weight: bold;
+padding: 7px 10px;
+	
+}
+
+#nav li {
+	float: left; 
+	padding: 0;
+	
+}
+
+#nav li ul {
+	z-index: 1000; 
+	position: absolute; 
+	left: -999em; 
+	height: auto; 
+	width: 132px; 
+	margin: 0; 
+	padding: 0;
+	
+}
+
+#nav li ul a {
+	width: 100px;
+	
+}
+
+#nav li ul ul {
+	margin: -32px 0 0 171px;
+	
+}
+
+#nav li:hover ul ul, 
+#nav li:hover ul ul ul, 
+#nav li.sfhover ul ul, 
+#nav li.sfhover ul ul ul {
+left: -999em;
+
+}
+
+#nav li:hover ul, 
+#nav li li:hover ul, 
+#nav li li li:hover ul, 
+#nav li.sfhover ul, 
+#nav li li.sfhover ul, 
+#nav li li li.sfhover ul {
+	left: auto;
+	
+}
+
+#nav li:hover, 
+#nav li.sfhover {
+	position: static;
+	
+}
+
+
+/* REGRAS CSS PARA DIMENSIONAR A LARGURA DE CADA SUBMENU */
+#NavbarMenuleft > #nav li:nth-child(1) li > a {width: 175px;}
+#NavbarMenuleft > #nav li:nth-child(2) li > a  {width: 110px;}
+#NavbarMenuleft > #nav li:nth-child(3) li > a  {width: 60px;}
+#NavbarMenuleft > #nav li:nth-child(4) li > a  {width: 145px;}
+#NavbarMenuleft > #nav li:nth-child(5) li > a  {width: 50px;}
+#NavbarMenuleft > #nav li:nth-child(6) li > a  {width: 95px;}
+
+

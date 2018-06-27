@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: darkgray;   /*cor do texto Cadastro de ....*/
+    
+}
+
+input:hover, input:focus {
+    
+    background-color: lavender; /*cor do fundo do input quando passa o mouse*/
+    color: black; /*cor do texto placehold quando passa o mouse*/
+    font-weight: bold; /* deixar negrito o texto placehold quando passa o mouse*/
+}
+
+.submit input {
+	 margin-left: 20px;  /*posição esqueda ou direita do botão Cadastrar*/ 
+    background-color: darkgray; /*cod do botao cadastrar*/
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: black;
+}
+
+form label {
+    margin-left: 20px;
+    color: black;     /*cor da fonte dos labels da formulario*/
+    font-weight: bold;
+}
+
+#header{
+    font-family: Verdana,Tahoma,sans-serif;
+    background-color: lightgray; /*cor do banner superior*/
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 0px;  /*move o inicio do banner para esqueda ou direita*/
+
+}
+
+div label {
+    margin-left: 20px; /*anda pra esquerda ou direita todos os labels do formulario*/
+    font-weight: bold;
+}
+
+
+
+#conteudo{
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    background-color: lightgray; /*cor de fundo do formulario*/
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+  
+}
+ 
+#home{
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 0px;
+    margin-top: -15px;  /*aumenta ou diminui o tamanho do banner na vertical da parte superior*/
+    background-color: white; /*cor do banner na parte superior*/
+    border-radius: 0px 0px 80px 250px;
+    margin-right: 1305px;
+  
+}
+
+
+
+#tabeladados{
+   margin-top: -40px;
+   width: 100%;
+   background-color: whitesmoke;
+   border-radius: 0px 0px 10px 10px;
+   height: 90px;
+   clear: both;
+   margin-left: 20px
+   
+   max-width: 100%;
+   height: auto;
+   overflow: scroll;
+   
+  }
+  
+  
+div#geral {	
+width: auto;	
+height: auto;		
+margin: 0 auto;
+}
+
+div#coluna_esquerda {	
+margin-top: 40px;
+float: left;	
+width: 667px;	
+height: 400px;	
+background-color: red; 
+}
+
+div#coluna_direita {	
+float: right;	
+width: 668px;	
+height: 500px;	
+background-color: lightblue; 
+}
+  

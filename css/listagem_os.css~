@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 10;
+    background-color: white;
+}
+
+#corpo{
+	 background-color: whitesmoke;
+    display:inline-block;
+    width: 1330px;
+    height: 850px;
+    color: white;
+    line-height: 50px;
+    border: 2px solid;
+    border-color:black;
+    padding-left: auto;
+	 
+}
+
+#ordem_servico{
+	background-color: whitesmoke;
+	text-align: center;
+	font-family: Verdana,Tahoma,sans-serif;
+	margin-top: -20px;
+}
+
+h1 {
+    text-align: center;
+    color: grey;   /*cor do texto Cadastro de ....*/    
+}
+
+#dados_empresa{	
+	width: auto;	
+	height: auto;		
+	margin: 0 auto;
+
+}
+
+#logo {	
+	margin-top: -110px;
+	float: left;	
+	width: 205px;	
+	height: 100px;	
+	background-color: whitesmoke;
+	color: black;
+	line-height:30px; 
+}
+
+#dados_empresa_esquerda {	
+	margin-top: -22px;     //movimento o bloco para cima ou para baixo;	
+	width: 600px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 205px;      //movimento o bloco para esquerda ou direita; 
+}
+
+#dados_empresa_direita {
+	margin-top: -100px;	   //movimento o bloco para cima ou para baixo;
+	float: right;	         //alinha o bloco na direita;
+	width: 312px;           //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;	         //aumento ou diminui o tamanho na vertical;
+	background-color: whitesmoke;   //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;       //movimento o bloco para esquerda ou direita;
+}
+
+#primeiro_separador {	
+	margin-top: 0px;	      //movimento o bloco para cima ou para baixo;
+	width: 1325px;	         //aumento ou diminui o tamanho na horizontal;
+	height: 2px;		      //aumento ou diminui o tamanho na vertical;
+	background-color: black;
+	margin-left: 5px;        //movimento o bloco para esquerda ou direita;
+}
+
+#dados_cliente_esquerda {	
+	margin-top: 4px;     //movimento o bloco para cima ou para baixo;	
+	width: 1325px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 5px;      //movimento o bloco para esquerda ou direita; 
+}
+
+#segundo_separador {	
+	margin-top: 0px;	      //movimento o bloco para cima ou para baixo;
+	width: 1325px;	         //aumento ou diminui o tamanho na horizontal;
+	height: 2px;		      //aumento ou diminui o tamanho na vertical;
+	background-color: black;
+	margin-left: 5px;        //movimento o bloco para esquerda ou direita;
+}
+
+#dados_carro_esquerda {	
+	margin-top: 4px;     //movimento o bloco para cima ou para baixo;	
+	width: 1325px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 5px;      //movimento o bloco para esquerda ou direita; 
+}
+
+#terceiro_separador {	
+	margin-top: 30px;	      //movimento o bloco para cima ou para baixo;
+	width: 1325px;	         //aumento ou diminui o tamanho na horizontal;
+	height: 2px;		      //aumento ou diminui o tamanho na vertical;
+	background-color: black;
+	margin-left: 5px;        //movimento o bloco para esquerda ou direita;
+}
+
+#tabela_servicos {	
+	margin-top: 4px;     //movimento o bloco para cima ou para baixo;	
+	width: 1325px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 5px;      //movimento o bloco para esquerda ou direita; 
+}
+
+#tabela_pecas {	
+	margin-top: 50px;     //movimento o bloco para cima ou para baixo;	
+	width: 1325px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	color: black;            //cor da fonte do label na div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 5px;      //movimento o bloco para esquerda ou direita; 
+}
+
+#totais_esquerda {	
+	margin-top: 100px;     //movimento o bloco para cima ou para baixo;	
+	width: 800px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 5px;      //movimento o bloco para esquerda ou direita; 
+}
+
+
+#totais_direita {
+	margin-top: -100px;	   //movimento o bloco para cima ou para baixo;
+	float: right;	         //alinha o bloco na direita;
+	width: 500px;           //aumento ou diminui o tamanho na horizontal;	
+	height: 160px;	         //aumento ou diminui o tamanho na vertical;
+	background-color: whitesmoke;   //cor de fundo a div;
+	line-height:35px;       //defini a largura do paragrafo
+	margin-left: -5px;      //movimento o bloco para esquerda ou direita;
+}
+
+#rodape {	
+	margin-top: 50px;     //movimento o bloco para cima ou para baixo;	
+	width: 550px;          //aumento ou diminui o tamanho na horizontal;	
+	height: 100px;         //aumento ou diminui o tamanho na vertical;	
+	background-color: whitesmoke;  //cor de fundo a div;
+	line-height:30px;        //espaçamento entre as linhas na div;
+	margin-left: 350px;      //movimento o bloco para esquerda ou direita; 
+}

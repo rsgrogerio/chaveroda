@@ -1,0 +1,53 @@
+<?php
+   
+$conn= new mysqli("localhost","root","","chaveroda");
+
+if($conn->connect_error){
+	echo "Error: ".$conn->connect_error;
+}
+
+$result = $conn->query("SELECT * FROM `cliente`");
+$data = array();
+
+/* while ($row = $result->fetch_assoc()){
+       
+       echo '<br /><pre>';
+       print_r($row);
+       echo '</pre>';
+} */
+
+ 
+      echo '<table width="900" height="50" border="1" cellspacing="0" bgcolor="green">';
+	 	echo '<tr>';
+		echo 	'<td bgcolor="lightgray" align="center"><strong>CPFCNPJ</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Nome<strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Endereco</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Bairro</strong></td>';
+		echo	'<td bgcolor="lightgray" align="center"><strong>Cidade</strong></td>';	   	
+		echo	'<td bgcolor="lightgray" align="center"><strong>UF</strong></td>';
+		echo	'<td bgcolor="lightgray" align="center"><strong>Telefone</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Celular</strong></td>';
+	   echo	'<td bgcolor="lightgray" align="center"><strong>Sexo</strong></td>';
+		echo	'<td bgcolor="lightgray" align="center"><strong>Email</strong></td>';
+	 	echo '</tr>';
+
+
+while ($row = $result->fetch_assoc()){
+            
+		echo '<tr>';
+		echo '  <td>'.$row["cpfcnpj"].'</td>';
+		echo '  <td><font size=2>'.$row["nome"].'</td>';
+		echo '  <td>'.$row["endereco"].'</td>';
+		echo '  <td>'.$row["bairro"].'</td>';
+		echo '  <td>'.$row["cidade"].'</td>';
+		echo '  <td>'.$row["uf"].'</td>';
+		echo '  <td>'.$row["telefone"].'</td>';
+		echo '  <td>'.$row["celular"].'</td>';
+		echo '  <td>'.$row["sexo"].'</td>';
+		echo '  <td>'.$row["email"].'</td>';
+		echo '</tr>';
+	
+}	
+	   echo '</table>';
+
+?>

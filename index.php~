@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lemar Sistemas de Gestão Comercial</title>
+    <link rel="stylesheet" href="../css/principal.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+  	<div id="header">
+  	   <?php require_once('..view/principal.html'); ?>  
+   </div>
+  
+  </body>
+</html>
